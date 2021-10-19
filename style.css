@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap');
+
+:root {
+    
+    --Red: hsl(0, 100%, 68%);
+    --Very-Dark-Blue: hsl(230, 29%, 20%);
+    --Dark-Grayish-Blue: hsl(230, 11%, 40%);
+    --Grayish-Blue: hsl(231, 7%, 65%);
+    --Light-Grayish-Blue: hsl(207, 33%, 95%); 
+
+    --Font-Barlow: 'Barlow', sans-serif;
+    --Font-Condensed: 'Barlow Condensed', sans-serif;
+    --Font-size: 1.125rem; 
+    --Font-400: 400;
+    --Font-700: 700;
+}
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*!-----------------*/
+.bg{
+    width: 50%;
+    height: 450px;
+    background-color: var(--Light-Grayish-Blue);
+    border-bottom-left-radius: 80px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
+.hero-img{
+    width: 165%;
+    position: relative;
+    right: 1.5rem;
+}
+
+.top-sub-title{
+    text-transform: uppercase;
+    font-family: var(--Font-Condensed);
+    letter-spacing: 2px;
+    color: var(--Grayish-Blue);
+}
+.new{
+    background-color: var(--Very-Dark-Blue);
+    color: #fff;
+    font-weight: var(--Font-700);
+    padding: 0.2rem 0.6rem;
+    border-radius: 100px;
+    margin-right: 1rem;
+}
+/*!-----------------*/
+.container{
+    overflow: hidden;
+    border:2px solid red;
+    padding: 2rem;
+    position: relative;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-wrapper{
+    display: none;
+}
+.content{
+    margin: 3rem 0;
+    border: 2px solid ;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.hero-img-wrapper{
+    width: 100%;
+    margin: 1rem 0 7rem  ;
+}
+.content--text{
+    border: 2px solid palegreen;
+}
